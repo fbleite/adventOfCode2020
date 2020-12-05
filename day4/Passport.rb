@@ -52,8 +52,6 @@ class Passport
         end
         unit = @fields["hgt"][-2..-1]
         value = @fields["hgt"][0..-3].to_i
-        # puts unit
-        # puts value
         if unit == 'cm'
             value >= 150 && value <= 193
         elsif unit == 'in'
